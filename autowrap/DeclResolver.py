@@ -152,7 +152,7 @@ class ResolvedMethod(object):
         self.wrap_ignore = decl.annotations.get("wrap-ignore", False)
         self.with_nogil = decl.annotations.get("wrap-with-no-gil", False)
         self.local_map = local_map
-        self.instance_amp = instance_map
+        self.instance_map = instance_map
 
     def __str__(self):
         args = [("%s %s" % (t, n)).strip() for (n, t) in self.arguments]
